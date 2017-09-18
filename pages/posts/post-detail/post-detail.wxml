@@ -1,0 +1,23 @@
+<view class="container">
+  <image class="detail-img" src="{{post_key.img_src.main}}" />
+  <image class="detail-play" src="/images/play.png" />
+  <view class="detail-date">
+    <image src="{{post_key.img_src.head}}" class="detail-head"></image>
+    <text class="detail-author">{{post_key.author}}</text>
+    <text class="const-text">发表于</text>
+    <text class="const-date">{{post_key.time}}</text>
+  </view>
+  <text class="detail-title">{{post_key.head}}</text>
+  <view class="detail-tool">
+    <view class="detail-circle">
+      <image wx:if="{{param}}" catchtap="onCollectionTap" src="/images/collect.png" />
+      <image wx:else src="/images/collectnone.png" catchtap="onCollectionTap"></image>
+      <image class="detail-share" catchtap="onShareTap" src="/images/share.png" />
+      
+    </view>
+    <view class="detail-line"></view>
+  </view>
+  <text class="detail">
+    {{post_key.text2}}
+  </text>
+</view>

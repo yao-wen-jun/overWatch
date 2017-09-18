@@ -1,0 +1,7 @@
+<!--wxml是编写小程序骨架的作用-->
+<view class="container">
+  <image class="user-img" mode="aspectFill" src="/images/logo.jpg"></image>
+  <view class="moto-border">
+    <text class="moto" bindtap="onTap">进入英雄世界</text>
+  </view>
+</view>

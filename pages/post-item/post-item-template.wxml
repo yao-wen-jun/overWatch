@@ -1,0 +1,17 @@
+<template name="postItem">
+  <view class="post-container">
+    <view class="post-author-date">
+      <image class="post-author-image" wx:if="{{item.img_condition}}" src="{{item.img_src.head}}"></image>
+      <text class="post-date">{{item.date}}</text>
+    </view>
+    <text class="post-title">{{item.title}}</text>
+    <image class="post-image" src="{{item.img_src.main}}"></image>
+    <text class="post-content">{{item.text}}</text>
+    <view class="post-like">
+      <image class="post-like-image" src="/images/聚收藏.png"></image>
+      <text class="post-like-font">{{item.collect}}</text>
+      <image class="post-like-image" src="/images/眼睛.png"></image>
+      <text class="post-like-font">{{item.vistor}}</text>
+    </view>
+  </view>
+</template>

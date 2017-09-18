@@ -1,0 +1,19 @@
+<import src="../post-item/post-item-template.wxml" />
+<view>
+  <swiper class="banner" indicator-dots="true" autoplay="true" circular="true">
+    <swiper-item>
+      <image src="/images/banner1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner3.jpg"></image>
+    </swiper-item>
+  </swiper>
+  <block wx:for="{{post_key}}" wx:for-item="item">
+     <view catchtap="OnPost" data-postId="{{item.postId}}">
+       <template is="postItem" data="{{item}}" />
+     </view>
+  </block>
+</view>

@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/posts/post-detail/post-detail",
+    "pages/posts/posts"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "守望先锋-资讯站",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}
